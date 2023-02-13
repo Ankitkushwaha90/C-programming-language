@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>CenterDiv</title>
+<style>
+*{
+	margin:0; padding:0;
+}
+.maincenterdiv{
+	display: grid;
+	place-items: center;
+	width: 500px;
+	height: 50vh;
+}
+.centerdiv{
+	background: blue;
+	width: 300px;
+	height: 100px;
+	}
+</style>
+
+</head>
+<body>
+	<div class = "maincenterdiv">
+		<div class="centerdiv">
+			<center><h1>Centerdiv</h1></center>
+		</div>
+	
+	<div>
+
+
+<script>
+let hexColor = `#${Math.random().toString(16).slice(2,8).padEnd(6, 0)}`;
+console.log("this is ~ hexColor", hexColor);
+
+const hello = document.querySelector(".maincenterdiv");
+hello.style.backgroundColor = hexColor;
+
+</script>
+
+
+</body>
+</html>
